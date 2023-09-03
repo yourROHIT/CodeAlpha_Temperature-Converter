@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgb(0, 180, 216, 0.4),
+      rgb(0, 119, 182, 0.5)
+    ),
+    url(/IMG/temp.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.temperature-heading {
+  color: #023047;
+  text-transform: uppercase;
+  text-shadow: #caf0f8;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 50px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.temperature-container {
+  display: flex;
+  width: 70%;
+  height: 25%;
+  justify-content: space-between;
+  align-items: center;
+  background: #03045e;
+  border-radius: 10px;
+  padding: 50px 20px;
+}
+
+.temperature {
+  flex-basis: 32%;
+  text-align: center;
+}
+
+.temperature-name {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #caf0f8;
+}
+
+.temperature input {
+  width: 250px;
+  height: 40px;
+  background: #caf0f8;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1344px) {
+  .container {
+    background-size: cover;
+  }
+
+  .temperature-heading {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    background-size: cover;
+  }
+
+  .temperature-heading {
+    margin-bottom: 70px;
+    font-size: 40px;
+  }
+
+  .temperature-container {
+    width: 70%;
+    height: 20%;
+  }
+
+  .temperature-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #caf0f8;
+  }
+
+  .temperature input {
+    width: 180px;
+  }
+}
+
+@media (max-width: 944px) {
+  .container {
+    background-size: cover;
+  }
+
+  .temperature-heading {
+    margin-bottom: 60px;
+    font-size: 30px;
+  }
+
+  .temperature-container {
+    height: 15%;
+  }
+
+  .temperature-name {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .temperature input {
+    width: 140px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 704px) {
+  .container {
+    background-size: cover;
+  }
+
+  .temperature-heading {
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .temperature-container {
+    width: 65%;
+    height: 10%;
+  }
+
+  .temperature {
+    flex-basis: 15%;
+  }
+
+  .temperature-name {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .temperature input {
+    width: 100px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 544px) {
+  .container {
+    background-size: cover;
+  }
+
+  .temperature-heading {
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+
+  .temperature-container {
+    width: 40%;
+    height: 14%;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .temperature {
+    flex-basis: 25%;
+  }
+
+  .temperature-name {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  .temperature input {
+    width: 80px;
+    height: 15px;
+    margin-bottom: 5px;
+  }
+}
